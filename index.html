@@ -6,9 +6,9 @@
   <link rel="stylesheet" href="font-awesome.min.css">
   <style>
     .player {width: 800px; height: 600px; box-shadow: 0 0 10px black; display: flex; flex-direction: column;}
-    .js-video-container {flex-grow: 1;}
-    .buttons-bar {background-color:black; display: flex;}
-    button {
+    .player-container {flex-grow: 1;}
+    .player-buttons-bar {background-color:black; display: flex;}
+    .player-buttons {
       border: none; 
       cursor: pointer; 
       background-color:rgba(0, 0, 0, 0); 
@@ -18,19 +18,19 @@
       margin-right: 10px; 
       margin-bottom: 10px;
     }
-    .fa {color: white; font-size: 15px;}
+    .player-button-icon {color: white; font-size: 15px;}
   </style>
 </head>
 <body>
   <div class="player" id="player">
-    <div class="js-video-container"></div>
-    <div class="buttons-bar">
-      <button class="js-play-button"><i class="fa fa-play" aria-hidden="true"></i></button>
-      <button class="js-pause-button"><i class="fa fa-pause" aria-hidden="true"></i></button>
-      <button class="js-mute-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
-      <button class="js-volume-button"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
+    <div class="js-video-container player-container"></div>
+    <div class="player-buttons-bar">
+      <button class="js-play-button player-buttons"><i class="fa fa-play player-button-icon" aria-hidden="true"></i></button>
+      <button class="js-pause-button player-buttons"><i class="fa fa-pause player-button-icon" aria-hidden="true"></i></button>
+      <button class="js-mute-button player-buttons"><i class="fa fa-volume-up player-button-icon" aria-hidden="true"></i></button>
+      <button class="js-volume-button player-buttons"><i class="fa fa-volume-off player-button-icon" aria-hidden="true"></i></button>
       <div style="flex-grow: 1;"></div>
-      <button class="js-fullscreen-button"><i class="fa fa-expand" aria-hidden="true"></i></button>
+      <button class="js-fullscreen-button player-buttons"><i class="fa fa-expand player-button-icon" aria-hidden="true"></i></button>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
