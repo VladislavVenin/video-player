@@ -22,7 +22,12 @@
       margin-bottom: 3px;
     }
     .player-button-icon {color: white; font-size: 20px;}
-    .timer {color: white; font-family: Roboto;}
+    .timer {
+      color: white;
+      font-family: Roboto;
+      margin-top: 5px;
+    }
+    .current-time {margin-left: 3px;}
   </style>
 </head>
 <body>
@@ -33,9 +38,9 @@
       <button class="js-pause-button player-buttons"><i class="fa fa-pause player-button-icon" aria-hidden="true"></i></button>
       <button class="js-mute-button player-buttons"><i class="fa fa-volume-up player-button-icon" aria-hidden="true"></i></button>
       <button class="js-volume-button player-buttons"><i class="fa fa-volume-off player-button-icon" aria-hidden="true"></i></button>
-      <div class="js-current-time timer"></div>
-      <div class="js-duration timer"></div>
+      <div class="js-current-time timer current-time"></div>
       <div style="flex-grow: 1;"></div>
+      <div class="js-duration timer"></div>
       <button class="js-fullscreen-button player-buttons"><i class="fa fa-expand player-button-icon" aria-hidden="true"></i></button>
     </div>
   </div>
