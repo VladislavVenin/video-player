@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
-    .player {width: 800px; height: 600px; box-shadow: 0 0 10px black; display: flex; flex-direction: column;}
+    .player {width: 800px; height: 605px; box-shadow: 0 0 10px black; display: flex; flex-direction: column;}
     .player-container {flex-grow: 1;}
     .player-buttons-bar {background-color:black; display: flex;}
     .player-buttons {
@@ -28,6 +28,29 @@
       margin-top: 5px;
     }
     .current-time {margin-left: 3px;}
+    .timeline {
+      margin-top: 13px;
+      margin-bottom: 15px;
+      margin-left: 9px;
+      margin-right: 9px;
+      flex-grow: 1;
+      display: flex;
+      align-items: flex-start;
+    }
+    .slider {
+      background-color: #f8104d;
+      height:5px;
+      border-radius: 30px;
+    }
+    .dot {
+      height: 8px;
+      width: 8px;
+      background-color: #f8104d;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-top: -4px;
+      margin-left: -6px;
+    }
   </style>
 </head>
 <body>
@@ -39,7 +62,10 @@
       <button class="js-mute-button player-buttons"><i class="fa fa-volume-up player-button-icon" aria-hidden="true"></i></button>
       <button class="js-volume-button player-buttons"><i class="fa fa-volume-off player-button-icon" aria-hidden="true"></i></button>
       <div class="js-current-time timer current-time"></div>
-      <div style="flex-grow: 1;"></div>
+      <div class="js-progress timeline">
+        <div class="js-progress-slider slider"></div>
+        <span class="dot"></span>
+      </div>
       <div class="js-duration timer"></div>
       <button class="js-fullscreen-button player-buttons"><i class="fa fa-expand player-button-icon" aria-hidden="true"></i></button>
     </div>
