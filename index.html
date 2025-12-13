@@ -4,61 +4,10 @@
   <title>Пример подключения плеера</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <style>
-    .player {width: 800px; height: 605px; box-shadow: 0 0 10px black; display: flex; flex-direction: column;}
-    .player-container {flex-grow: 1;}
-    .player-buttons-bar {background-color:black; display: flex;}
-    .player-buttons {
-      border: none; 
-      cursor: pointer; 
-      background-color:rgba(0, 0, 0, 0); 
-      height: 30px; 
-      width: 30px;
-      margin-left: 3px; 
-      margin-right: 3px; 
-      margin-bottom: 3px;
-    }
-    .player-buttons:focus, .player-buttons:hover { outline: none }
-    .player-button-icon {color: white; font-size: 20px;}
-    .timer {
-      color: white;
-      font-family: Roboto;
-      margin-top: 5px;
-    }
-    .current-time {margin-left: 3px;}
-    .timeline {
-      margin-top: 13px;
-      margin-bottom: 15px;
-      margin-left: 9px;
-      margin-right: 9px;
-      flex-grow: 1;
-      display: flex;
-      align-items: flex-start;
-    }
-    .slider {
-      background-color: #f8104d;
-      height:5px;
-      border-radius: 30px;
-    }
-    .dot {
-      height: 8px;
-      width: 8px;
-      background-color: #f8104d;
-      border-radius: 50%;
-      border: 3px solid white;
-      margin-top: -4px;
-      margin-left: -6px;
-      opacity: 0%;
-      transition: opacity 300ms ease-in;
-    }
-    .timeline:hover .dot {
-      opacity: 100%;
-      transition: opacity 300ms ease-out;
-    }
-  </style>
 </head>
 <body>
   <div class="player" id="player">
